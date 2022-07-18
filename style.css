@@ -1,0 +1,569 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">;
+font-family: 'Montserrat', sans-serif;
+
+@font-face {
+    font-family: 'droid ';
+    src: url(font/DroidSerif-Italic.woff);
+}
+
+@font-face {
+    font-family: 'wisdom';
+    src: url(font/Wisdom\ Script\ AJ.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header section start here*/
+header{
+    background-image: url(img/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+}
+
+header::after{
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: -1;
+}
+
+.logo h3{
+    font-family: wisdom;
+    color: #f4c936;
+    font-size: 26px;
+    padding-top: 40px;
+    letter-spacing: 3px;
+}
+
+.header-right nav ul{
+    margin: 0;
+    padding: 0;
+   float: right;
+   margin-top: -40px;
+}
+
+
+
+.header-right nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+}
+
+.header-right nav ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+   position: relative;
+  
+ 
+}
+
+.sub-menu{
+    display: none  ;
+  
+}
+
+.header-right nav ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 40px;
+    padding-top: 10px;
+    
+}
+
+.header-right nav ul li:hover .sub-menu ul{
+    display: block;
+}
+
+.header-right nav ul li a:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0.175rem;
+    left: 0;
+    bottom: -10px;
+    background: #f4c936;
+    transition: .3s;
+
+}
+
+.header-right nav ul li a:hover:after{
+width: 100%;
+}
+
+.header-middle{
+    margin-top: 210px;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 200px;
+
+}
+
+.header-middle h5{
+   font-family: Droid;
+   font-size: 40px;
+   letter-spacing: 1px;
+}
+
+.header-middle h2{
+    font-family:Montserrat;
+    text-transform: uppercase;
+    font-size: 75px;
+    font-weight: 600;
+    margin: 20px auto 60px auto;
+    
+}
+
+.header-middle a{
+    font-size: 18px;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #f4c936;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    position: relative;
+}
+/*header section end here*/
+
+/*Service section start here*/
+.service-title{
+    text-align: center;
+    margin: 90px;
+}
+
+.service-title h2{
+    font-family: montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.service-title p{
+    font-family: Droid;
+    font-size: 20px;
+    opacity: .9;
+    margin-bottom: -10px;
+}
+
+.service-single-box .fas{
+margin-left: 150px;
+font-size: 40px;
+color: #f4c936;
+width: 70px;
+height: 70px;
+border: 2px solid #f4c936;
+border-radius: 50%;
+text-align: center;
+padding-top: 13px;
+}
+
+.service-single-box h3{
+   text-align: center;
+   margin-top: 25px;
+   margin-left: 15px;
+   font-family: Montserrat;
+   font-size: 22px;
+   letter-spacing: 1px;
+   font-weight: 600;
+   
+}
+
+.service-single-box p{
+    font-family:  Roboto, sans-serif;
+    opacity: .9;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 0px -0px;
+}
+/*Service section end here*/
+
+/*portfolio section start here*/
+.portfolio{
+    background-color: #f7f7f7;
+    padding-bottom: 70px;
+}
+.portfolio-title{
+    text-align: center;
+    margin: 80px;
+    padding: 95px;
+   margin-bottom: -40px;
+}
+
+.portfolio-title h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-weight: 600;
+}
+
+.portfolio-title p{
+    font-size: 18px;
+    opacity: .9;
+}
+
+.portfolio-single-box {
+    text-align: center;
+    margin-bottom: 45px;
+    transition: .3s;
+}
+
+.portfolio-single-box .single-word{
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    margin: 0px 33px;
+    
+}
+
+.portfolio-single-box h3{
+    font-size: 20px;
+    padding-top: 15px;
+    font-weight: 600px;
+}
+
+.portfolio-single-box:hover{
+    transform: scale(1.1);
+}
+/*portfolio section end here*/
+
+/*about us section start here*/
+.about-us{
+   padding-bottom: 80px;
+   overflow: hidden;
+    
+}
+
+.about-title{
+        text-align: center;
+        margin: 20px;
+        padding: 95px;
+       margin-bottom: -40px;
+    }
+
+    .about-title h2{
+        font-size: 40px;
+        text-transform: uppercase;
+        font-family: montserrat;
+        font-weight: 600;
+    }
+
+    .about-title p{
+        font-size: 18px;
+        opacity: .9;
+    }
+
+    .single-about-box{
+        text-align: center;
+    }
+
+    #word{
+        width: 35%;
+        float: left;
+        text-align: right;
+        margin-left: 50px;
+        padding-right: 15px;
+    }
+
+    #pic{
+        width:20% ;
+        float: left;
+        position: relative;
+        transition: .3s;
+    }
+
+    #word2{
+        width: 35%;
+        float: right;
+        text-align: left;
+        margin-right: 45px;
+    }
+
+    .single-about-box{
+        margin-top: 40px;
+    }
+
+    #pic::after{
+        position: absolute;
+        content: '';
+        background-color: black;
+        width: 70px;
+        height: 1px;
+        right: 70px;
+        transform: rotate(90deg);
+        top: 215px;
+        opacity: .8;
+    }
+
+    .single-about-box h3{
+        font-family: montserrat;
+        font-weight: 800;
+        font-size: 21px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .single-about-box p{
+        opacity: .9;
+    }
+
+
+
+    #pic2{
+        width: 23% ;
+        float: right;
+        position: relative;
+        transition: .3s;
+    }
+
+    #pic2::before{
+        position: absolute;
+        content: '';
+        background-color: black;
+        width: 70px;
+        height: 1px;
+        right: 85px;
+        transform: rotate(90deg);
+        top: 215px;
+        opacity: .8;
+    }
+
+    #pic2:hover{
+        transform: scale(1.2);
+       cursor: pointer;
+       
+    }
+
+    #pic:hover{
+        transform: scale(1.2);
+       cursor: pointer;
+    }
+
+    #single-pic h3{
+        text-align: center;
+        font-family: montserrat;
+        font-size: 20px;
+        height: 160px;
+        width: 160px;
+        background-color: #f4c936;
+        border-radius: 50%;
+        padding-top: 40px;
+        margin: 20px auto;
+        color: #ffffff;
+        font-weight: 800;
+        transition: .3s;
+
+    }
+
+    #single-pic h3:hover{
+        color: black;
+        transform: scale(1.1);
+        cursor: pointer;
+
+    }
+
+    /*about us section end here*/
+
+    /*team sectin start here*/
+.team-title{
+        text-align: center;
+        margin: 20px;
+        padding: 95px;
+       margin-bottom: -40px;
+}
+
+.team-title h2{
+    font-size: 40px;
+        text-transform: uppercase;
+        font-family: montserrat;
+        font-weight: 600;
+        text-transform: uppercase;
+}
+
+.team-title p{
+    font-size: 18px;
+    opacity: .9;
+}
+
+.team{
+    background-color: #f9f9f9 ;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+.single-team-box{
+    text-align: center;
+    
+}
+
+.social-links ul{
+    margin: 0;
+    padding: 0;
+}
+
+.social-links ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    padding-left: 6px;
+    margin: 5px;
+}
+
+.social-links ul li a:hover{
+    color: blueviolet;
+    background-color: #f4c936;
+}
+
+.single-team-box h3{
+    font-family: montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.single-team-box p{
+    margin: -7px;
+}
+
+.para p{
+    text-align: center;
+    margin: 50px;
+    padding-bottom: 30px;
+    
+}
+    /*team section end here*/
+/*contact us area start here*/
+    .contact-us{
+        background-image: url(img/cb.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding-bottom: 180px;
+    }
+
+    .contact-us::after{
+        position: absolute;
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+
+    .contact-us::after{
+        content:'' ;
+        clear: both;
+        display: block;
+    }
+
+    .contact-title {
+        text-align: center;
+        margin: 90px;
+        color: #ffffff;
+    }
+
+    .contact-title h2{
+        font-family: montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        
+    }
+
+  .contact-title p{
+    font-size: 18px;
+    opacity: .8;
+  }
+
+  .form-left {
+      width: 48%;
+      float: left;
+  }
+
+  .form-right{
+      width: 48%;
+      float: right;
+  }
+
+  #write{
+  width: 100%;
+  padding: 10px;
+  display: block;
+  margin-bottom: 30px;
+  }
+
+  #msg{
+      width: 100%;
+  }
+
+  .btn input{
+      padding: 20px 30px;
+      margin: 10px auto;
+      background-color: #f4c936;
+      color: #ffffff;
+      border: none;
+      font-size: 22px;
+      font-family: montserrat;
+      font-weight: 600;
+  }
+  /*contact us area end here*/
+
+/*footer section start here*/
+.copy-left{
+    margin: 0px 0px 40px 120px;
+    font-weight: 600;
+    padding-top: -200px;
+}
+
+  /*footer section end here*/
+
+  
+
+
+
+
+  
+    
+
+
+    
